@@ -23,49 +23,61 @@
     <div class="sobre-nos">
       <div class="container">
         <div class="missao">
-          <img src="./img/missao.png" class="box-item" alt="" />
+          <img
+            onclick="mostrar_missao()"
+            src="./img/missao.png"
+            class="box-item"
+            alt=""
+          />
           <h1>Missão</h1>
-          <p>
+          <p id="id_p_missao">
             Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
             nisi. Mauris aliquet nunc non turpis scelerisque, eget. Si num tem
             leite então bota uma pinga aí cumpadi! Paisis, filhis, espiritis
             santis. Suco de cevadiss deixa as pessoas mais interessantis.
-            Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
-            Nam vulputate dapibus. Leite de capivaris, leite de mula manquis
-            sem cabeça. Sapien in monti palavris qui num significa nadis i
-            pareci latim. Viva Forevis aptent taciti sociosqu ad litora
-            torquent.
+            Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+            vulputate dapibus. Leite de capivaris, leite de mula manquis sem
+            cabeça. Sapien in monti palavris qui num significa nadis i pareci
+            latim. Viva Forevis aptent taciti sociosqu ad litora torquent.
           </p>
         </div>
-        <br>
+        <br />
         <div class="visao">
-          <img src="./img/visao.png" class="box-item" alt="" />
+          <img
+            onclick="mostrar_visao()"
+            src="./img/visao.png"
+            class="box-item"
+            alt=""
+          />
           <h1>Visão</h1>
-          <p>
+          <p id="id_p_visao">
             Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
             nisi. Mauris aliquet nunc non turpis scelerisque, eget. Si num tem
             leite então bota uma pinga aí cumpadi! Paisis, filhis, espiritis
             santis. Suco de cevadiss deixa as pessoas mais interessantis.
-            Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
-            Nam vulputate dapibus. Leite de capivaris, leite de mula manquis
-            sem cabeça. Sapien in monti palavris qui num significa nadis i
-            pareci latim. Viva Forevis aptent taciti sociosqu ad litora
-            torquent.
+            Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+            vulputate dapibus. Leite de capivaris, leite de mula manquis sem
+            cabeça. Sapien in monti palavris qui num significa nadis i pareci
+            latim. Viva Forevis aptent taciti sociosqu ad litora torquent.
           </p>
         </div>
         <div class="valores">
-          <img src="./img/valores.png" class="box-item" alt="" />
+          <img
+            onclick="mostrar_valores()"
+            src="./img/valores.png"
+            class="box-item"
+            alt=""
+          />
           <h1>Valores</h1>
-          <p>
+          <p id="id_p_valores">
             Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
             nisi. Mauris aliquet nunc non turpis scelerisque, eget. Si num tem
             leite então bota uma pinga aí cumpadi! Paisis, filhis, espiritis
             santis. Suco de cevadiss deixa as pessoas mais interessantis.
-            Praesent malesuada urna nisi, quis volutpat erat hendrerit non.
-            Nam vulputate dapibus. Leite de capivaris, leite de mula manquis
-            sem cabeça. Sapien in monti palavris qui num significa nadis i
-            pareci latim. Viva Forevis aptent taciti sociosqu ad litora
-            torquent.
+            Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+            vulputate dapibus. Leite de capivaris, leite de mula manquis sem
+            cabeça. Sapien in monti palavris qui num significa nadis i pareci
+            latim. Viva Forevis aptent taciti sociosqu ad litora torquent.
           </p>
         </div>
       </div>
@@ -105,4 +117,17 @@
   </body>
 </html>
 
-<script></script>
+<script>
+  function mostrar_missao(){
+    id_p_missao.style.display = "block";
+  }
+
+  function mostrar_visao(){
+    id_p_visao.style.display = "block";
+  }
+
+  function mostrar_valores(){
+    id_p_valores.style.display = "block";
+  }
+
+</script>

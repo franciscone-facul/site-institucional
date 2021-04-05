@@ -120,7 +120,6 @@ body {
 .sobre-nos {
   width: 100%;
   height: 700px;
-  background-color: blue;
 }
 
 .sobre-nos img {
@@ -130,19 +129,28 @@ body {
   height: 150px;
 }
 
-.sobre-nos h1, .sobre-nos p{
+.sobre-nos h1 {
   margin-left: 200px;
   text-align: right;
+}
+
+.sobre-nos p {
+  margin-left: 200px;
+  margin-top: 20px;
+  text-align: right;
+  display: none;
 }
 
 .missao {
   width: 100%;
   height: 233px;
 }
+
 .valores {
   width: 100%;
   height: 233px;
 }
+
 .visao {
   width: 100%;
   height: 233px;
@@ -155,7 +163,12 @@ body {
   border-top: solid orangered 4px;
 }
 
-.nosso-time h1, .nosso-time h3{
+.nosso-time h1 {
+  text-align: center;
+  color: white;
+}
+
+.nosso-time h3 {
   text-align: center;
 }
 
