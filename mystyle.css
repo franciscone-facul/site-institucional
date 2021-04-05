@@ -9,15 +9,6 @@ body {
   background-color: rgb(236, 233, 233);
 }
 
-footer {
-  color: rgb(236, 233, 233);
-  background-color: orangered;
-  height: 40px;
-  text-align: center;
-  padding-top: 20px;
-  margin-top: 88px;
-}
-
 /* INICIO LANDING PAGE */
 
 .container {
@@ -122,4 +113,107 @@ footer {
 .box-item h3,
 .box-item p {
   margin-top: 15px;
+}
+
+/*INICIO SOBRE NÓS*/
+
+.sobre-nos {
+  width: 100%;
+  height: 700px;
+  background-color: blue;
+}
+
+.sobre-nos img {
+  float: left;
+  width: 150px;
+  margin-top: 20px;
+  height: 150px;
+}
+
+.sobre-nos h1, .sobre-nos p{
+  margin-left: 200px;
+  text-align: right;
+}
+
+.missao {
+  width: 100%;
+  height: 233px;
+}
+.valores {
+  width: 100%;
+  height: 233px;
+}
+.visao {
+  width: 100%;
+  height: 233px;
+}
+
+.time {
+  width: 100%;
+  background-color: #232323;
+  height: 270px;
+  border-top: solid orangered 4px;
+}
+
+.nosso-time h1, .nosso-time h3{
+  text-align: center;
+}
+
+.integrante1 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: left;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.integrante2 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: left;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.integrante3 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: left;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.integrante4 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: right;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.integrante5 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: right;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.integrante6 {
+  width: 15%;
+  height: 200px;
+  background-color: orangered;
+  float: right;
+  margin: 9px;
+  border-radius: 10px;
+}
+
+.box-item-time {
+  width: 90px;
+  margin: 35px;
 }
