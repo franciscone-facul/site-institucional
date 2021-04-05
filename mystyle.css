@@ -132,11 +132,12 @@ body {
 .sobre-nos h1 {
   margin-left: 200px;
   text-align: right;
+  padding-top: 15px;
 }
 
 .sobre-nos p {
   margin-left: 200px;
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: right;
   display: none;
 }
@@ -159,13 +160,14 @@ body {
 .time {
   width: 100%;
   background-color: #232323;
-  height: 270px;
+  height: 300px;
   border-top: solid orangered 4px;
 }
 
 .time h1 {
   text-align: center;
   color: white;
+  padding: 15px;
 }
 
 .time h3 {
@@ -229,4 +231,52 @@ body {
 .box-item-time {
   width: 90px;
   margin: 35px;
+}
+
+/*INICIO FORMULÁRIO LOGIN*/
+
+.form_login {
+  background-color: rgba(255, 68, 0, 0.24);
+  width: 40%;
+  margin: auto;
+  margin-top: 100px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.form_login label,
+.form_login input {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.form_login input {
+  margin-bottom: 25px;
+  height: 35px;
+  border: solid #b5b5b5 1px;
+  border-radius: 5px;
+  font-size: 17px;
+}
+
+.form_login h1 {
+  text-align: center;
+  padding-top: 45px;
+  color: #232323;
+}
+
+.form_login button {
+  background-color: rgba(0, 219, 29, 0.87);
+  padding: 10px;
+  width: 20%;
+  margin-top: 15px; 
+  margin-left: 40%;
+  border: none;
+  color: white;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.imagem_fundo {
+  background-image: url(./img/tarde.png);
 }
