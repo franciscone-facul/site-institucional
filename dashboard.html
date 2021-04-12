@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Da acesso a lib -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <h1><span class="highlight">Projeto</span> IoT Revolucionário</h1>
+      </div>
+    </div>
+
+    <div class="dash">
+      <!-- Farol de temperatura -->
+      <div class="graph">
+        <div class="box red">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box yellow">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box green">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+      </div>
+
+      <!-- Gráfico de Linhas -->
+      <div class="graph">
+        <canvas id="myChartLine"></canvas>
+      </div>
+
+      <!-- Gráfico de Barras -->
+      <div class="graph">
+        <canvas id="myChartBar"></canvas>
+      </div>
+
+      <!-- Grafico Pizza -->
+      <div class="graph">
+        <canvas id="myChartPie"></canvas>
+      </div>
+    </div>
+  </body>
+
+  <!-- Inserir JS do Gráfico -->
+  <script>
+    //GRÁFICO DE LINHAS - TEMPERATURA DIÁRIA
+    //Dados do Gráfico
+    const labelsLine = ["07:00", "10:00", "13:00", "16:00", "19:00", "21:00"];
+    const dataLine = {
+      labels: labelsLine,
+      datasets: [
+        {
+          label: "Temperatura diária",
+          backgroundColor: "#2196f3",
+          borderColor: "#2196f3",
+          data: [21, 23, 27, 19, 20, 19],
+          tension: 0.3,
+          // fill: true,
+        },
+        {
+          label: "Temperatura mensal",
+          backgroundColor: "#3f51b5",
+          borderColor: "#3f51b5",
+          data: [25, 22, 30, 40, 19, 20],
+          tension: 0.3,
+          // fill: true,
+        },
+      ],
+    };
+
+    //Configurações do Gráfico
+    const configLine = {
+      type: "line",
+      data: dataLine,
+      options: { maintainAspectRatio: false },
+    };
+
+    //Variável para visualização do Gráfico
+    var myChartLine = new Chart(
+      document.getElementById("myChartLine"),
+      configLine
+    );
+
+    //GRÁFICO DE BARRAS - QUANTIDADE POR ESPÉCIE
+    const labelsBar = [
+      "Colisa",
+      "Tetra",
+      "Coridora",
+      "Molinésia",
+      "Arco-íris",
+      "Betta",
+    ];
+    const dataBar = {
+      labels: labelsBar,
+      datasets: [
+        {
+          label: "Quantidade por espécie",
+          backgroundColor: ["#2196f3", "#3f51b5", "#9c27b0"],
+          borderColor: ["#2196f3", "#3f51b5", "#9c27b0"],
+          data: [10, 70, 50, 5, 30, 65],
+          // fill: true,
+        },
+      ],
+    };
+    const configBar = {
+      type: "bar",
+      data: dataBar,
+      options: { maintainAspectRatio: false },
+    };
+
+    var myChartBar = new Chart(
+      document.getElementById("myChartBar"),
+      configBar
+    );
+
+    //GRÁFICO DE PIZZA
+    const labelsPie = ["Jovem", "Adulto", "Idoso"];
+    const dataPie = {
+      labels: labelsPie,
+      datasets: [
+        {
+          label: "Quantidade por Idade",
+          backgroundColor: ["#2196f3", "#3f51b5", "#9c27b0"],
+          borderColor: ["#2196f3", "#3f51b5", "#9c27b0"],
+          data: [153, 60, 17],
+          // hoverOffset: 4,
+          // fill: true,
+        },
+      ],
+    };
+    const configPie = {
+      type: "pie",
+      data: dataPie,
+      options: { maintainAspectRatio: false },
+    };
+
+    var myChartPie = new Chart(
+      document.getElementById("myChartPie"),
+      configPie
+    );
+  </script>
+</html>
